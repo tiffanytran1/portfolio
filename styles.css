@@ -177,29 +177,36 @@ body {
 #staffGallery {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 380px;
+  align-items: flex-start;
+
+  /* height: 380px; */
   width: 80%;
-  gap: 50px;
+  gap: 100px;
+  box-sizing: border-box;
+  /* padding: 20px; */
 }
 
 #portfolioGallery {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 800px;
   width: 100%;
-  gap: 50px;
+  gap: 30px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 #projectGallery {
   flex: 1 1 auto;
   flex-wrap: wrap;
+  width: 100%;
 
   align-items: center;
   height: 85%;
   width: 35%;
+  /* max-width: 400px; */
   padding: 15px;
   background-color: #f1f8ff;
   border-radius: 10px;
@@ -208,6 +215,7 @@ body {
 .galleryImage {
   width: 100%;
   height: 70%;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 5px;
   align-self: center;
@@ -377,4 +385,129 @@ td {
 
 .padding-top {
   padding-top: 2.5%;
+}
+
+.sectionHeading {
+  font-size: 30px;
+  padding-left: 6%;
+  padding-bottom: 0%;
+}
+
+.projectHeading {
+  color: #00314f;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.projectSubHeading {
+  color: #00314f;
+  font-size: 17px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contactHeading {
+  font-size: 24px;
+}
+
+.contactSubHeading {
+  font-size: large;
+  text-indent: 5%;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    display: none;
+  }
+
+  #staffGallery {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  #projectGallery {
+    width: 90%;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 125%; /* Scale base font size up (20px instead of 16px) */
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+  .sectionHeading {
+    font-size: 3rem;
+    padding-left: 7%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  .projectHeading {
+    font-size: 2rem;
+  }
+
+  .projectSubHeading {
+    font-size: 1.75rem;
+  }
+
+  #aboutGallery {
+    gap: 100px;
+  }
+
+  .contactHeading {
+    font-size: 2rem;
+  }
+
+  .contactSubHeading {
+    font-size: 1.65rem;
+  }
+
+  .picGallery {
+    width: 700px;
+    /* gap: 200px; */
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  #portfolioGallery {
+    gap: 150px;
+  }
+
+  #staffGallery {
+    gap: 150px;
+    align-items: center;
+    width: 80%;
+  }
+
+  #projectGallery {
+    padding: 30px;
+  }
+
+  .galleryImage {
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+  }
 }
