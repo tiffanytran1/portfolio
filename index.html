@@ -1,8 +1,7 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,57 +9,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
-
+  <div id="navBar">
+    <h4>Home</h4>
+    <h4>About Me</h4>
+    <h4>Projects</h4>
+  </div>
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <div id="navBar">
-        <h4>Home</h4> 
-        <h4>About Me</h4> 
-        <h4>Projects</h4>
-      </div>
+      <h3>Hey there :) I'm</h3>
 
-      <h3>Hey there, I'm</h3> 
-
-      <h1>Tiffany Tran</h1> 
-     <!-- <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/> -->
-      <h2>a design engineer striving to make digital experiences and interactions more intuitive and accessible
+      <h1>Tiffany Tran</h1>
+      <!-- <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/> -->
+      <h2 style="padding-bottom: 16%">
+        a project manager striving to make digital experiences and interactions
+        more intuitive and accessible
       </h2>
     </div>
-    <h4 style="font-size: 30px; padding-left: 6%; padding-bottom: 2%;"> About Me
-    </h4> 
-    <h2>a design engineer striving to make digital experiences and interactions more intuitive and accessible
-    </h2>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/CAB.png"/>
-      <img class="galleryImage" src="./assets/drive.png"/>
-      <img class="galleryImage" src="./assets/cs.png"/>
-    </div> 
-    <h4 style="font-size: 30px; padding-left: 6%; padding-bottom: 2%;"> Projects
+    <h4 style="font-size: 30px; padding-left: 6%; padding-bottom: 0%">
+      I am also...
     </h4>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/CAB.png"/>
-      <img class="galleryImage" src="./assets/drive.png"/>
-      <img class="galleryImage" src="./assets/cs.png"/>
-    </div> 
+    <div id="aboutGallery">
+      <div class="picGallery">
+        <img class="aboutImage" src="./assets/t1.png" />
+        <p style="padding: 0%">
+          studying
+          <a
+            href="https://www.brown.edu/undergraduate-programs/behavioral-decision-sciences-ab"
+            >Behavioral Sciences</a
+          >
+          &
+          <a href="https://cs.brown.edu/">CS</a>
+          (see below 😋) at
+          <a href="https://www.brown.edu/">Brown</a>
+          🧠💻
+        </p>
+      </div>
+      <div class="picGallery">
+        <img class="aboutImage" src="./assets/src.jpg" />
+        <p style="padding: 0%">
+          <a href="https://responsible.cs.brown.edu/"
+            >researching accessibility standards</a
+          >
+          with the
+          <a href="https://cntr.brown.edu/">Center for Tech Responsibility</a>
+          🤓
+        </p>
+      </div>
+      <div class="picGallery">
+        <img class="aboutImage" src="./assets/vsa.png" />
+        <p>
+          an executive board member of the
+          <a href="https://www.instagram.com/brownvsa/?hl=en/">
+            Vietnamese Student Association</a
+          >
+          🇻🇳
+        </p>
+      </div>
+      <div class="picGallery">
+        <img class="aboutImage" src="./assets/run.JPG" />
+        <p>currently training for my second half marathon 🏃🏻‍♀️💨</p>
+      </div>
+    </div>
 
-    <h3>Designers are encouraged to consider <span class="blue-text">mismatches</span>, which Kat Holmes defines as 
-      <span class="blue-text">instances where poor design hinders human interactions</span>.
-    </h3>
+    <h4
+      style="
+        font-size: 30px;
+        padding-top: 3%;
+        padding-left: 6%;
+        padding-bottom: 1%;
+      "
+    >
+      Projects
+    </h4>
 
-    <div class="video-container">
-      <h4>Notice how keyboard interactions cannot access the <span class="blue-text">People</span>, <span class="blue-text">Modified</span>, and <span class="blue-text">Source</span> dropdown menus.
-      </h4>
-        <video class="video" muted autoplay loop>
-          <source src="./assets/video.mp4" type="video/mp4">
-        </video>
-    </div>  
-
-   
+    <div id="portfolioGallery">
+      <div id="staffGallery">
+        <div id="projectGallery">
+          <a
+            style="text-decoration: none"
+            href="https://tiffanytran1.github.io/accessible-components/"
+          >
+            <img class="galleryImage" src="./assets/CAB.png" />
+            <p
+              style="
+                color: #00314f;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 22px;
+              "
+            >
+              Standardizing Dropdown Menus
+            </p>
+            <p
+              style="
+                color: #00314f;
+                font-size: 17px;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            >
+              Comparing different implementations, addressing steps for
+              accessibility, and re-designing for accessibility
+            </p>
+          </a>
+        </div>
+        <div id="projectGallery">
+          <a
+            style="text-decoration: none"
+            href="https://tiffanytran1.github.io/personas-and-storyboarding/"
+          >
+            <img class="galleryImage" src="./assets/s6.jpg" />
+            <p
+              style="
+                color: #00314f;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 22px;
+              "
+            >
+              Improving Dorm Water Stations
+            </p>
+            <p
+              style="
+                color: #00314f;
+                font-size: 17px;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            >
+              Comparing on-campus options through students interviews and
+              representative personas
+            </p>
+          </a>
+        </div>
+      </div>
+      <div id="staffGallery">
+        <div id="projectGallery">
+          <a
+            style="text-decoration: none"
+            href="https://tiffanytran1.github.io/responsive-redesign/"
+          >
+            <img class="galleryImage" src="./assets/acls.png" />
+            <p
+              style="
+                color: #00314f;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 22px;
+              "
+            >
+              Rethinking a County Library System
+            </p>
+            <p
+              style="
+                color: #00314f;
+                font-size: 17px;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            >
+              Identifying and fixing issues with website usability,
+              learnability, and responsiveness
+            </p>
+          </a>
+        </div>
+        <div id="projectGallery">
+          <a
+            style="text-decoration: none"
+            href="https://tiffanytran1.github.io/accessible-components/"
+          >
+            <img class="galleryImage" src="./assets/partiful.png" />
+            <p
+              style="
+                color: #00314f;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 22px;
+              "
+            >
+              Redesigning Partiful's Photo Feature
+            </p>
+            <p
+              style="
+                color: #00314f;
+                font-size: 17px;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            >
+              Iteratively evaliating users' experience to inform platform
+              changes and redesign
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
-
- 
 </html>
