@@ -74,9 +74,12 @@ p {
   justify-content: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: #f1f8ff; /* normal link color */
-  text-decoration: underline;
+  text-decoration: none; /* remove underline */
 }
 
 a:hover {
